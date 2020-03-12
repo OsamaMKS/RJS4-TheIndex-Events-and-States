@@ -2,8 +2,10 @@ import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSearch } from "@fortawesome/free-solid-svg-icons";
 
-const SearchBar = props => {
-  const handleChange = event => props.filter(event.target.value);
+function SearchBar(props) {
+  const handleChange = event => {
+    props.filter(event.target.value);
+  };
 
   return (
     <div className="form-group col-lg-6 col-12 mx-auto">
@@ -22,6 +24,6 @@ const SearchBar = props => {
       </div>
     </div>
   );
-};
+}
 
 export default SearchBar;
